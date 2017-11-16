@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Roboto';
-    url('../Fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('../Fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto-Light';
-    url('../Fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    src: url('../Fonts/Roboto/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto-Bold';
-    url('../Fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    src: url('../Fonts/Roboto/Roboto-Bold.ttf') format('truetype');
 }
