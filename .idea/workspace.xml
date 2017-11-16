@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a530222-d184-4ecd-a8ee-a2061c859759" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/start/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/start/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/WebAppBundle/Css/Main.css" afterPath="$PROJECT_DIR$/web/bundles/WebAppBundle/Css/Main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="Main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/bundles/WebAppBundle/Css/Main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="132" column="23" lean-forward="false" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+            <state relative-caret-position="559">
+              <caret line="133" column="22" lean-forward="false" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -276,12 +275,12 @@
       <updated>1510822516808</updated>
       <workItem from="1510822518314" duration="2389000" />
       <workItem from="1510842543213" duration="300000" />
-      <workItem from="1510842934043" duration="5339000" />
+      <workItem from="1510842934043" duration="5440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8028000" />
+    <option name="totallyTimeSpent" value="8129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -475,8 +474,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/WebAppBundle/Css/Main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="132" column="23" lean-forward="false" selection-start-line="132" selection-start-column="23" selection-end-line="132" selection-end-column="23" />
+        <state relative-caret-position="559">
+          <caret line="133" column="22" lean-forward="false" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
           <folding />
         </state>
       </provider>
