@@ -1,6 +1,7 @@
 body{
     font-family: Roboto, sans-serif;
     background-color: #f7f7f7;
+    color: #212121;
 }
 
 h1{
@@ -13,5 +14,6 @@ h3{
     font-size: 40px;
     font-family: Roboto-Light;
     margin-top: 20px;
+    color: #039be5;
 }
 
