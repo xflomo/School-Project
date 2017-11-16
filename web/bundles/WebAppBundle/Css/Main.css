@@ -1,0 +1,17 @@
+body{
+    font-family: Roboto, sans-serif;
+    background-color: #f7f7f7;
+}
+
+h1{
+    font-size: 100px;
+    font-family: Roboto-Light;
+    margin-top: 300px;
+}
+
+h3{
+    font-size: 40px;
+    font-family: Roboto-Light;
+    margin-top: 20px;
+}
+

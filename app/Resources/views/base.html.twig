@@ -3,7 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <!-- Google Material Icons -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!-- Bootstrap -->
+            <link href="{{ asset('bundles/WebAppBundle/Css/bootstrap.min.css') }}" rel="stylesheet">
+            <!-- Pace Loading -->
+            <link href="{{ asset('bundles/WebAppBundle/Components/pace/css/pace.css') }}" rel="stylesheet">
+
+            <!-- Fonts -->
+            <link href="{{ asset('bundles/WebAppBundle/Css/Fonts.css') }}" rel="stylesheet">
+
+            <!-- Main Styling -->
+            <link href="{{ asset('bundles/WebAppBundle/css/Main.css') }}" rel="stylesheet">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
