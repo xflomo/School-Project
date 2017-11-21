@@ -5,14 +5,12 @@ body{
 }
 
 header{
-    position: fixed;
-    top: 0;
-    left: 270px;
-    right: 0;
+    position: relative;
     background-color: #039be5;
-    z-index: 3;
-    height: 256px;
-    padding: 115px 200px 0;
+    z-index: 1;
+    min-height: 267px;
+    padding: 200px 200px 0;
+    width: 100%;
 }
 
 header h1{
@@ -21,6 +19,23 @@ header h1{
     font-weight: 400;
     line-height: 1.5;
     margin: 0px;
+}
+
+.menu-burger{
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    left: 200px;
+    cursor: pointer;
+}
+
+.menu-burger span{
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin-bottom: 7px;
+    box-shadow: 0px 0px 3px #0000007a;
 }
 
 .side-nav-header{
@@ -126,12 +141,14 @@ p{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: Roboto-Bold;
+    font-family: Roboto;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     border-radius: 3px;
+    font-size: 16px;
+    outline: none !important;
 }
 
 
@@ -146,4 +163,44 @@ p{
     top: 256px;
     margin-top: 100px;
     right: 250px;
+}
+
+
+.karteikarte{
+    margin: 0 auto;
+    width: 800px;
+    height: auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px -2px 15px #0000004d;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Roboto-Light;
+    z-index: 3;
+    position: relative;
+}
+
+.translation-input{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 800px;
+    text-align: center;
+}
+
+.translation-input input{
+    background: none;
+    border: 0px;
+    border-bottom: 1px solid #bbb;
+    font-size: 20px;
+    font-family: Roboto-Light;
+    width: 100%;
+    padding: 13px;
+    outline: none !important;
+}
+
+.button-navigation{
+    text-align: center;
+    margin-top: 100px;
 }

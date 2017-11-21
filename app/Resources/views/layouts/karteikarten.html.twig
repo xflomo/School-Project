@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <!-- Google Material Icons -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!-- Bootstrap -->
+            <link href="{{ asset('bundles/WebAppBundle/Css/bootstrap.min.css') }}" rel="stylesheet">
+            <!-- Pace Loading -->
+            <link href="{{ asset('bundles/WebAppBundle/Components/pace/css/pace.css') }}" rel="stylesheet">
+
+            <!-- Fonts -->
+            <link href="{{ asset('bundles/WebAppBundle/Css/Fonts.css') }}" rel="stylesheet">
+
+            <!-- Main Styling -->
+            <link href="{{ asset('bundles/WebAppBundle/Css/Main.css') }}" rel="stylesheet">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <header>
+        <div class="menu-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="karteikarte" class="karteikarte">
+            <span>Eine test Vokabel</span>
+        </div>
+
+    </header>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="{{ asset('bundles/WebAppBundle/Components/jquery-textfill/source/jquery.textfill.min.js') }}"></script>
+            <script src="{{ asset('bundles/WebAppBundle/Js/Main.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
