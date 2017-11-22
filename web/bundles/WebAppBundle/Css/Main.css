@@ -83,7 +83,7 @@ header .navbar-spacer{
 .icon-bubble{
     width: 100px;
     height: 100px;
-    background: #eee;
+    background: #f5f5f5;
     border-radius: 100%;
     display: block;
     margin: 0 auto;
@@ -93,6 +93,17 @@ header .navbar-spacer{
 .icon-bubble i{
     font-size: 45px;
     margin-top: 26px;
+}
+
+.loggedin-user .icon-bubble{
+    width: 50px;
+    height: 50px;
+}
+
+.loggedin-user .icon-bubble i{
+    font-size: 30px;
+    margin-top: 9px;
+    color: #333;
 }
 
 #side-nav{
@@ -206,7 +217,7 @@ p{
 
 
 .karteikarte .karteikart-content{
-    min-height: 300px;
+    min-height: 350px;
     padding: 40px;
     background: #fff;
     text-align: center;
@@ -216,10 +227,6 @@ p{
     font-family: Merienda One;
     z-index: 3;
     border: 1px solid #eee;
-}
-
-.karteikarte .karteikart-content.next-card{
-    margin-top: -300px;
 }
 
 .karteikarte .next-card-bg{
@@ -240,29 +247,64 @@ p{
     box-shadow: 0px -2px 15px #0000002b;
 }
 
-.prev-card-arrow{
+.karteikarte .prev-card-arrow,
+.karteikarte .owl-carousel .owl-nav button.owl-prev{
     position: absolute;
-    left: -100px;
-    font-size: 70px;
+    left: -85px;
+    font-size: 100px;
     color: #777;
-    top: 125px;
+    top: 140px;
     cursor: pointer;
     z-index: 5;
+    line-height: 55px;
+    outline: none !important;
 }
 
-.next-card-arrow{
+.karteikarte .next-card-arrow,
+.karteikarte .owl-carousel  .owl-nav button.owl-next{
     position: absolute;
-    right: -105px;
-    font-size: 70px;
+    right: -90px;
+    font-size: 100px;
     color: #777;
-    top: 125px;
+    top: 140px;
     cursor: pointer;
     z-index: 5;
+    line-height: 55px;
+    outline: none !important;
+}
+
+.card-navigation{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 0px 70px;
+    display: flex;
+}
+
+.card-navigation i{
+    color: #777;
+    font-size: 35px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.card-navigation i:hover{
+    color: #333;
+}
+
+.card-navigation i:last-child{
+    margin-right: 0px;
 }
 
 .prev-card-arrow:hover,
+.karteikarte .owl-carousel .owl-nav button.owl-prev:hover,
+.karteikarte .owl-carousel  .owl-nav button.owl-next:hover,
 .next-card-arrow:hover{
     color: #333;
+}
+
+.karteikarte .owl-dots{
+    display: none;
 }
 
 .translation-input{
