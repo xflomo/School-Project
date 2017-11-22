@@ -246,7 +246,8 @@ p{
     font-family: Merienda One;
     z-index: 3;
     border: 1px solid #eee;
-    perspective: 1000px;
+    border-top: 0px;
+    border-left: 0px;
 }
 
 .karteikarte .karteikart-content.back{

@@ -47,8 +47,8 @@
       <file leaf-file-name="Main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/bundles/WebAppBundle/Css/Main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="252" column="30" lean-forward="false" selection-start-line="252" selection-start-column="30" selection-end-line="252" selection-end-column="30" />
+            <state relative-caret-position="552">
+              <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,6 +143,7 @@
       <find>current-card</find>
       <find>\n            \&lt;div class\=\&quot;item flip\-card\-effect\&quot;\&gt;\n                \&lt;div class\=\&quot;karteikart\-content front\&quot;\&gt;\n                    \&lt;span\&gt;Eine test Vokabel\&lt;\/span\&gt;\n                \&lt;\/div\&gt;\n                \&lt;div class\=\&quot;karteikart\-content back\&quot;\&gt;\n                    \&lt;span\&gt;Eine test Vokabel\&lt;\/span\&gt;\n                \&lt;\/div\&gt;\n            \&lt;\/div\&gt;</find>
       <find>next-</find>
+      <find>back</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -400,12 +401,12 @@
       <workItem from="1511117332123" duration="4076000" />
       <workItem from="1511296910739" duration="4947000" />
       <workItem from="1511343723754" duration="5659000" />
-      <workItem from="1511360095898" duration="9718000" />
+      <workItem from="1511360095898" duration="9813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32894000" />
+    <option name="totallyTimeSpent" value="32989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -806,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/WebAppBundle/Css/Main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="252" column="30" lean-forward="false" selection-start-line="252" selection-start-column="30" selection-end-line="252" selection-end-column="30" />
+        <state relative-caret-position="552">
+          <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
           <folding />
         </state>
       </provider>
