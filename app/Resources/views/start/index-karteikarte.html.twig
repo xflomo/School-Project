@@ -1,12 +1,23 @@
 {% extends 'layouts/karteikarten.html.twig' %}
 
 {% block body %}
+    <div id="karteikarte" class="karteikarte">
+        <div class="karteikart-content">
+            <span>Eine test Vokabel</span>
+        </div>
+        <span class="next-card"></span>
+        <span class="next-card next-card-2"></span>
+
+        <i class="material-icons prev-card-arrow">keyboard_arrow_left</i>
+        <i class="material-icons next-card-arrow">keyboard_arrow_right</i>
+    </div>
+
     <div class="translation-input">
-        <input type="text" placeholder="gebe die Übersetzung ein.">
+        <input type="text" placeholder="gebe die übersetzung ein.">
     </div>
 
     <div class="button-navigation">
-        <button class="btn-enter">Angaben überprüfen</button>
+        <button class="btn-enter">angaben überprüfen</button>
     </div>
 {% endblock %}
 

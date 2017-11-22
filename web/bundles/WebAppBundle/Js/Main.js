@@ -1,7 +1,6 @@
 $(window).load(function () {
-    $('#karteikarte').textfill({
+    $('#karteikarte .karteikart-content').textfill({
         minFontPixels: 22,
-        widthOnly: true
     });
 });
 
