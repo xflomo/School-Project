@@ -3,5 +3,3 @@ $(window).load(function () {
         minFontPixels: 22,
     });
 });
-
-

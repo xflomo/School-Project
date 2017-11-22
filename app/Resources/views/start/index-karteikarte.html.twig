@@ -2,11 +2,25 @@
 
 {% block body %}
     <div id="karteikarte" class="karteikarte">
-        <div class="karteikart-content">
+        <div class="aktueller-stapel-daten">
+            <div class="stapel-name">
+                <i class="material-icons">layers</i>
+                Aktueller Stapelname
+            </div>
+            <div class="anzahl-karten">
+                <i class="material-icons">comment</i>
+                <strong>10</strong> von 12 Karten
+            </div>
+
+        </div>
+        <div class="karteikart-content current-card">
             <span>Eine test Vokabel</span>
         </div>
-        <span class="next-card"></span>
-        <span class="next-card next-card-2"></span>
+        <div class="karteikart-content next-card">
+            <span>Eine test Vokabel</span>
+        </div>
+        <span class="next-card-bg"></span>
+        <span class="next-card-bg next-card-bg-2"></span>
 
         <i class="material-icons prev-card-arrow">keyboard_arrow_left</i>
         <i class="material-icons next-card-arrow">keyboard_arrow_right</i>

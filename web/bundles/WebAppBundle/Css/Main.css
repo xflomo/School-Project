@@ -9,8 +9,12 @@ header{
     background-color: #039be5;
     z-index: 1;
     min-height: 267px;
-    padding: 200px 200px 0;
     width: 100%;
+}
+
+header .container-fluid{
+    padding: 50px 200px 0px 200px;
+    display: flex;
 }
 
 header h1{
@@ -21,21 +25,47 @@ header h1{
     margin: 0px;
 }
 
-.menu-burger{
+.aktueller-stapel-daten{
+    color: #fff;
+    font-size: 20px;
+    font-family: Roboto-Light;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: -50px;
     position: absolute;
-    z-index: 5;
-    top: 50px;
-    left: 200px;
-    cursor: pointer;
+    padding: 0px 20px;
 }
 
+.aktueller-stapel-daten .stapel-name{
+    display: flex;
+    flex: 1;
+}
+.aktueller-stapel-daten .anzahl-karten i{
+    font-size: 27px;
+    margin-top: 2px;
+}
+
+.aktueller-stapel-daten i{
+    font-size: 30px;
+    float: left;
+    margin-right: 10px;
+}
+
+header .navbar-spacer{
+    display: flex;
+    flex: 1;
+}
+
+.menu-burger{
+    cursor: pointer;
+}
 .menu-burger span{
     width: 35px;
     height: 3px;
     background: #fff;
     display: block;
     margin-bottom: 7px;
-    box-shadow: 0px 0px 3px #0000007a;
 }
 
 .side-nav-header{
@@ -188,7 +218,11 @@ p{
     border: 1px solid #eee;
 }
 
-.karteikarte .next-card{
+.karteikarte .karteikart-content.next-card{
+    margin-top: -300px;
+}
+
+.karteikarte .next-card-bg{
     background: #fff;
     position: absolute;
     bottom: -4px;
@@ -199,7 +233,7 @@ p{
     height: 100%;
 }
 
-.karteikarte .next-card.next-card-2{
+.karteikarte .next-card-bg.next-card-bg-2{
     bottom: -8px;
     right: -8px;
     z-index: -2;
@@ -213,6 +247,7 @@ p{
     color: #777;
     top: 125px;
     cursor: pointer;
+    z-index: 5;
 }
 
 .next-card-arrow{
@@ -222,6 +257,12 @@ p{
     color: #777;
     top: 125px;
     cursor: pointer;
+    z-index: 5;
+}
+
+.prev-card-arrow:hover,
+.next-card-arrow:hover{
+    color: #333;
 }
 
 .translation-input{
