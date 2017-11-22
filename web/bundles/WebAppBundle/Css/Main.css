@@ -192,6 +192,23 @@ p{
     outline: none !important;
 }
 
+.btn-enter.turn-card-action-btn,
+.btn-enter.turn-card-back-action-btn{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding: 7px 0px 0px 0px;
+}
+
+.btn-enter.turn-card-back-action-btn{
+    display: none;
+}
+
+.btn-enter.turn-card-action-btn i,
+.btn-enter.turn-card-back-action-btn i{
+    font-size: 40px;
+}
 
 .btn-enter:hover{
     box-shadow: 0px 1px 9px #0000004d;
@@ -217,7 +234,9 @@ p{
 
 
 .karteikarte .karteikart-content{
+    height: 350px;
     min-height: 350px;
+    max-height: 350px;
     padding: 40px;
     background: #fff;
     text-align: center;
@@ -227,6 +246,11 @@ p{
     font-family: Merienda One;
     z-index: 3;
     border: 1px solid #eee;
+    perspective: 1000px;
+}
+
+.karteikarte .karteikart-content.back{
+    background-color: #eee;
 }
 
 .karteikarte .next-card-bg{

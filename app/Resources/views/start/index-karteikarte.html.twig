@@ -14,24 +14,52 @@
         </div>
 
         <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="karteikart-content current-card">
-                        <span>Eine test Vokabel</span>
-                    </div>
-                </div> <div class="item">
-                    <div class="karteikart-content current-card">
-                        <span>Eine test Vokabel</span>
-                    </div>
-                </div> <div class="item">
-                    <div class="karteikart-content current-card">
-                        <span>Eine test Vokabel</span>
-                    </div>
-                </div> <div class="item">
-                    <div class="karteikart-content current-card">
-                        <span>Eine test Vokabel</span>
-                    </div>
+            <div class="item flip-card-effect">
+                <div class="karteikart-content front">
+                    <span>Eine test Vokabel</span>
+                </div>
+                <div class="karteikart-content back">
+                    <span>Das ist die Beschreibung zu der Vokabel. Sie sollte nicht zu lang sein (ungefähr so).</span>
                 </div>
             </div>
+
+            <div class="item flip-card-effect">
+                <div class="karteikart-content front">
+                    <span>Eine test Vokabel</span>
+                </div>
+                <div class="karteikart-content back">
+                    <span>Das ist die Beschreibung zu der Vokabel. Sie sollte nicht zu lang sein (ungefähr so).</span>
+                </div>
+            </div>
+
+            <div class="item flip-card-effect">
+                <div class="karteikart-content front">
+                    <span>Eine test Vokabel</span>
+                </div>
+                <div class="karteikart-content back">
+                    <span>Das ist die Beschreibung zu der Vokabel. Sie sollte nicht zu lang sein (ungefähr so).</span>
+                </div>
+            </div>
+
+            <div class="item flip-card-effect">
+                <div class="karteikart-content front">
+                    <span>Eine test Vokabel</span>
+                </div>
+                <div class="karteikart-content back">
+                    <span>Das ist die Beschreibung zu der Vokabel. Sie sollte nicht zu lang sein (ungefähr so).</span>
+                </div>
+            </div>
+
+            <div class="item flip-card-effect">
+                <div class="karteikart-content front">
+                    <span>Eine test Vokabel</span>
+                </div>
+                <div class="karteikart-content back">
+                    <span>Das ist die Beschreibung zu der Vokabel. Sie sollte nicht zu lang sein (ungefähr so).</span>
+                </div>
+            </div>
+
+        </div>
         <span class="next-card-bg"></span>
         <span class="next-card-bg next-card-bg-2"></span>
     </div>
@@ -45,11 +73,12 @@
     {#</div>#}
 
     <div class="translation-input">
-        <input type="text" placeholder="gebe die übersetzung ein.">
+        <input type="text" placeholder="Gibt optional die Antwortmöglichkeit ein, diese überprüfen wir dann mit der Lösung.">
     </div>
 
     <div class="button-navigation">
-        <button class="btn-enter">angaben überprüfen</button>
+        <button class="btn-enter turn-card-action-btn"><i class="material-icons">rotate_right</i></button>
+        <button class="btn-enter turn-card-back-action-btn"><i class="material-icons">rotate_left</i></button>
     </div>
 {% endblock %}
 
