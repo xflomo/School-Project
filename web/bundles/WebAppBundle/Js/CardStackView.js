@@ -9,8 +9,7 @@ $(window).load(function () {
         margin: 0,
         nav: true,
         items: 1,
-        animateOut: 'slideOutDown',
-        animateIn: 'fadeIn',
+        smartSpeed: 800,
         onInitialize: initCardCounter,
         onChanged: changeCard
     };
@@ -61,7 +60,7 @@ function changeCard(e) {
 function refreshCardFlips() {
     setTimeout(function(){
         $(".flip-card-effect").flip(false);
-    }, 800);
+    }, 850);
     $('.btn-enter.turn-card-back-action-btn').hide();
     $('.btn-enter.turn-card-action-btn').show();
 }
