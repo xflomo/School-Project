@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a530222-d184-4ecd-a8ee-a2061c859759" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/start/flashcard_train_view.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CardDeckController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/bundles/WebAppBundle/Css/DeckOverview.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/start/cardDeckView.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/start/deck_overview.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layouts/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layouts/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/WebAppBundle/Css/CardDeckView.css" afterPath="$PROJECT_DIR$/web/bundles/WebAppBundle/Css/CardDeckView.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/WebAppBundle/Css/Main.css" afterPath="$PROJECT_DIR$/web/bundles/WebAppBundle/Css/Main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/WebAppBundle/Js/CardDeckView.js" afterPath="$PROJECT_DIR$/web/bundles/WebAppBundle/Js/CardDeckView.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deck_overview.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="deck_overview.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/start/deck_overview.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
@@ -94,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/layouts/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="68" column="97" lean-forward="false" selection-start-line="68" selection-start-column="97" selection-end-line="68" selection-end-column="97" />
+            <state relative-caret-position="347">
+              <caret line="67" column="14" lean-forward="false" selection-start-line="67" selection-start-column="14" selection-end-line="74" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -194,10 +186,10 @@
         <option value="$PROJECT_DIR$/web/bundles/WebAppBundle/Js/CardDeckView.js" />
         <option value="$PROJECT_DIR$/web/bundles/WebAppBundle/Css/CardDeckView.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layouts/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/CardDeckController.php" />
         <option value="$PROJECT_DIR$/web/bundles/WebAppBundle/Css/DeckOverview.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/start/deck_overview.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layouts/base.html.twig" />
       </list>
     </option>
   </component>
@@ -452,12 +444,12 @@
       <workItem from="1511427740653" duration="1993000" />
       <workItem from="1511438081342" duration="1698000" />
       <workItem from="1511445777110" duration="2321000" />
-      <workItem from="1511455247932" duration="9074000" />
+      <workItem from="1511455247932" duration="9237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49998000" />
+    <option name="totallyTimeSpent" value="50161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -781,14 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layouts/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="68" column="97" lean-forward="false" selection-start-line="68" selection-start-column="97" selection-end-line="68" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/WebAppBundle/Css/CardDeckView.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -804,14 +788,6 @@
           <folding>
             <element signature="e#40#99#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CardDeckController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,6 +835,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CardDeckController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layouts/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="67" column="14" lean-forward="false" selection-start-line="67" selection-start-column="14" selection-end-line="74" selection-end-column="25" />
           <folding />
         </state>
       </provider>
