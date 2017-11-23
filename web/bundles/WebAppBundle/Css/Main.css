@@ -2,6 +2,28 @@ body{
     font-family: Roboto, sans-serif;
     background-color: #f5f5f5;
     color: #212121;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 100px;
+    font-family: Roboto-Light;
+    margin-top: 300px;
+}
+
+h3{
+    font-size: 38px;
+    font-family: Roboto-Light;
+    margin: 0px 0px 30px 0px;
+    color: #039be5;
+}
+
+p{
+    color: #212121;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 25px;
 }
 
 header{
@@ -25,36 +47,36 @@ header h1{
     margin: 0px;
 }
 
-.aktueller-stapel-daten{
-    color: #fff;
-    font-size: 20px;
-    font-family: Roboto-Light;
-    width: 800px;
-    margin: 0 auto;
-    display: flex;
-    margin-top: -50px;
-    position: absolute;
-    padding: 0px 20px;
-}
-
-.aktueller-stapel-daten .stapel-name{
-    display: flex;
-    flex: 1;
-}
-.aktueller-stapel-daten .anzahl-karten i{
-    font-size: 27px;
-    margin-top: 2px;
-}
-
-.aktueller-stapel-daten i{
-    font-size: 30px;
-    float: left;
-    margin-right: 10px;
-}
-
 header .navbar-spacer{
     display: flex;
     flex: 1;
+}
+
+.side-nav{
+    position: fixed;
+    left: -650px;
+    top: 0;
+    bottom: 0;
+    width: 650px;
+    background: #fff;
+    z-index: 1001;
+    box-shadow: 0px 0px 40px #0000006e;
+    display: none;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.6s ease-in;
+    -o-transition: all 0.6s ease-in;
+    transition: all 0.6s ease-in;
+}
+
+.menu-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: #0003;
+    display: none;
 }
 
 .menu-burger{
@@ -66,18 +88,6 @@ header .navbar-spacer{
     background: #fff;
     display: block;
     margin-bottom: 7px;
-}
-
-.side-nav-header{
-    padding: 30px 0px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.side-nav-header .username{
-    text-align: center;
-    display: block;
-    margin-top: 12px;
-    font-size: 16px;
 }
 
 .icon-bubble{
@@ -106,75 +116,6 @@ header .navbar-spacer{
     color: #333;
 }
 
-#side-nav{
-    border-right: 1px solid rgba(0,0,0,.14);
-    bottom: 0;
-    background: #fff;
-    color: #212121;
-    display: block;
-    font-family: Roboto,sans-serif;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 270px;
-    z-index: 4;
-    transform: translateZ(0);
-    transform-style: preserve-3d;
-    transition-delay: .1s;
-    transition-duration: .2s;
-    transition-property: transform,left;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    font-weight: 700;
-    letter-spacing: 0.5px;
-}
-
-#side-nav nav{
-    padding: 20px 0px;
-}
-#side-nav ul{
-    margin: 0px;
-    padding: 0px;
-}
-
-
-#side-nav ul li{
-    list-style: none;
-    border-left: 2px solid transparent;
-    color: #212121;
-    font-family: Roboto;
-    margin-top: 0;
-    padding: 15px 0 15px 35px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-}
-
-#side-nav ul li:hover{
-    background-color: #f5f5f5;
-}
-
-h1{
-    font-size: 100px;
-    font-family: Roboto-Light;
-    margin-top: 300px;
-}
-
-h3{
-    font-size: 38px;
-    font-family: Roboto-Light;
-    margin: 0px 0px 30px 0px;
-    color: #039be5;
-}
-
-p{
-    color: #212121;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    margin-bottom: 25px;
-    max-width: 900px;
-}
-
 .btn-enter{
     border: 0px;
     padding: 15px 35px;
@@ -190,38 +131,45 @@ p{
     border-radius: 3px;
     font-size: 16px;
     outline: none !important;
+    display: inline-block;
 }
 
-.btn-enter.turn-card-action-btn,
-.btn-enter.turn-card-back-action-btn{
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    padding: 7px 0px 0px 0px;
-}
-
-.btn-enter.turn-card-back-action-btn{
-    display: none;
-}
-
-.btn-enter.turn-card-action-btn i,
-.btn-enter.turn-card-back-action-btn i{
-    font-size: 40px;
-}
-
-.btn-enter:hover{
+.btn-enter:hover,
+.btn-enter:active,
+.btn-enter:focus{
     box-shadow: 0px 1px 9px #0000004d;
+    color: #fff;
+    text-decoration: none;
 }
 
 .content-container{
-    position: absolute;
-    margin-left: 200px;
-    left: 270px;
-    top: 256px;
     margin-top: 100px;
-    right: 250px;
 }
+
+
+
+.button-navigation{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************
+*
+* Card Stack View Styles
+*
+**************************/
+
 
 .karteikarte{
     margin: 0 auto;
@@ -351,7 +299,48 @@ p{
     outline: none !important;
 }
 
-.button-navigation{
+
+.aktueller-stapel-daten{
+    color: #fff;
+    font-size: 20px;
+    font-family: Roboto-Light;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: -50px;
+    position: absolute;
+    padding: 0px 20px;
+}
+
+.aktueller-stapel-daten .stapel-name{
+    display: flex;
+    flex: 1;
+}
+.aktueller-stapel-daten .anzahl-karten i{
+    font-size: 27px;
+    margin-top: 2px;
+}
+
+.aktueller-stapel-daten i{
+    font-size: 30px;
+    float: left;
+    margin-right: 10px;
+}
+
+.btn-enter.turn-card-action-btn,
+.btn-enter.turn-card-back-action-btn{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
     text-align: center;
-    margin-top: 100px;
+    padding: 7px 0px 0px 0px;
+}
+
+.btn-enter.turn-card-back-action-btn{
+    display: none;
+}
+
+.btn-enter.turn-card-action-btn i,
+.btn-enter.turn-card-back-action-btn i{
+    font-size: 40px;
 }

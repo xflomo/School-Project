@@ -1,7 +1,7 @@
-{% extends 'layouts/karteikarten.html.twig' %}
+{% extends 'layouts/base.html.twig' %}
 
 {% block body %}
-    <div>
+    <div class="container content-container">
         {{ form_start(form) }}
         {{ form_row(form.username) }}
         {{ form_row(form.email) }}

@@ -4,8 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="mobile-web-app-capable" content="yes">
+
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
+            <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
             <!-- Google Material Icons -->
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             <!-- Bootstrap -->
@@ -16,34 +18,46 @@
             <!-- Fonts -->
             <link href="{{ asset('bundles/WebAppBundle/Css/Fonts.css') }}" rel="stylesheet">
 
+            <!-- OWL Slider -->
+            <link href="{{ asset('bundles/WebAppBundle/Components/OwlCarousel2/dist/assets/owl.carousel.min.css') }}" rel="stylesheet">
+
             <!-- Main Styling -->
+            <link href="{{ asset('bundles/WebAppBundle/Css/Animate.css') }}" rel="stylesheet">
             <link href="{{ asset('bundles/WebAppBundle/Css/Main.css') }}" rel="stylesheet">
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <header>
-        <h1>Der Kursname evtl</h1>
-    </header>
-    <div id="side-nav">
-        <div class="side-nav-header">
-            <div class="icon-bubble">
-                <i class="material-icons">person</i>
+        <div class="container-fluid">
+            <div class="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="username">Florian Breuer</div>
+            <div class="navbar-spacer"></div>
+            {% if is_granted('ROLE_USER') %}
+            <div class="loggedin-user">
+                <div class="icon-bubble">
+                    <i class="material-icons">person</i>
+                </div>
+            </div>
+            {% endif %}
         </div>
-        <nav>
-            <ul>
-                <li>Startseite</li>
-                <li>Seite 2</li>
-                <li>Beispiel 3</li>
-                <li>Seite Test</li>
-                <li>Seite Muste</li>
-                <li>Einstellung</li>
-            </ul>
-        </nav>
-    </div>
+    </header>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+            <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+            <script src="{{ asset('bundles/WebAppBundle/Components/jquery-textfill/source/jquery.textfill.min.js') }}"></script>
+            <script src="{{ asset('bundles/WebAppBundle/Components/OwlCarousel2/dist/owl.carousel.min.js') }}"></script>
+            <script src="{{ asset('bundles/WebAppBundle/Js/Main.js') }}"></script>
+            <script src="{{ asset('bundles/WebAppBundle/Js/CardStackView.js') }}"></script>
+        {% endblock %}
     </body>
+
+    <div class="side-nav">
+
+    </div>
+    <div class="menu-overlay"></div>
 </html>
