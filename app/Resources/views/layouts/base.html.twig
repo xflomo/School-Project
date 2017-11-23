@@ -62,7 +62,13 @@
         </span>
         <ul>
             <li><a href="{{ path('homepage') }}" title="Startseite">Startseite</a></li>
-            <li><a href="{{ path('karteikarte') }}" title="Karteikarten">Karteikarten</a></li>
+            <li><a href="#" title="Kartenstapel">Kartenstapel</a></li>
+            <ul class="sub-menu">
+                <li><a href="{{ path('karteikarte') }}" title="Kartenstapel 1">Kartenstapel 1</a></li>
+                <li><a href="{{ path('karteikarte') }}" title="Beispiel Stapel">Beispiel Stapel</a></li>
+                <li><a href="{{ path('karteikarte') }}" title="Stapel von Florian">Stapel von Florian</a></li>
+                <li><a href="{{ path('karteikarte') }}" title="Stapel von Edurado">Stapel von Edurado</a></li>
+            </ul>
             <li><a href="{{ path('user_registration') }}" title="Registrieren">Registrieren</a></li>
             <li><a href="{{ path('logout') }}" title="Abmelden">Abmelden</a></li>
         </ul>

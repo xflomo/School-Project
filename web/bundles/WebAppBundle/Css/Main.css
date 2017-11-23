@@ -78,16 +78,27 @@ header .navbar-spacer{
 
 .side-nav ul li a{
     padding: 20px 80px;
-    font-size: 25px;
+    font-size: 24px;
     font-family: Roboto-Light;
     color: #333;
     display: block;
 }
 
-.side-nav ul li a:hover{
+.side-nav ul li a:hover,
+.side-nav ul li a:active,
+.side-nav ul li a:focus{
     text-decoration: none;
     background-color: #f5f5f5;
     color: #000;
+}
+
+.side-nav ul.sub-menu{
+    padding: 0px 80px;
+}
+
+.side-nav ul.sub-menu li a{
+    padding: 20px 32px;
+    font-size: 21px;
 }
 
 .side-nav .close-btn{
@@ -255,6 +266,10 @@ header .navbar-spacer{
     box-shadow: 0px -2px 15px #0000002b;
 }
 
+.owl-carousel .owl-stage-outer{
+    background-color: #f5f5f5;
+}
+
 .karteikarte .prev-card-arrow,
 .karteikarte .owl-carousel .owl-nav button.owl-prev{
     position: absolute;
@@ -360,22 +375,4 @@ header .navbar-spacer{
     font-size: 30px;
     float: left;
     margin-right: 10px;
-}
-
-.btn-enter.turn-card-action-btn,
-.btn-enter.turn-card-back-action-btn{
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    padding: 7px 0px 0px 0px;
-}
-
-.btn-enter.turn-card-back-action-btn{
-    display: none;
-}
-
-.btn-enter.turn-card-action-btn i,
-.btn-enter.turn-card-back-action-btn i{
-    font-size: 40px;
 }

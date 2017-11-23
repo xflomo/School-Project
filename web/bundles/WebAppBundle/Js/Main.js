@@ -12,6 +12,13 @@ $(window).load(function () {
 });
 
 
+$(document).keyup(function(e) {
+    // Escape click
+    if(e.keyCode == 27){
+        closeMenu();
+    }
+});
+
 function openMenu() {
     $('.menu-overlay').fadeIn();
     $('.side-nav').fadeIn();

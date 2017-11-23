@@ -6,7 +6,7 @@ $(window).load(function () {
     });
 
     var options={
-        margin: 0,
+        margin: 5,
         nav: true,
         items: 1,
         smartSpeed: 800,
@@ -23,20 +23,31 @@ $(window).load(function () {
         minFontPixels: 22,
     });
 
-    
-    $('.turn-card-action-btn').on('click', function () {
-        turnCardAndCheckUserInput();
-    });
-
-    $('.turn-card-back-action-btn').on('click', function () {
-        turnCardBack();
+    $('.flip-card-effect').on('click', function () {
+        turnCard();
     });
 
 
 });
 
-
-
+$(document).keyup(function(e) {
+    if(e.keyCode == 37){
+        owl.trigger('prev.owl.carousel');
+    }
+    // Pfeil Rechts
+    else if(e.keyCode == 39){
+        owl.trigger('next.owl.carousel');
+    }
+    // Pfeil Leertaste
+    else if(e.keyCode == 32){
+        var flip = $(".flip-card-effect").data("flip-model");
+        if(flip.isFlipped){
+            turnCard();
+        }else{
+            turnCard();
+        }
+    }
+});
 
 /**********************************
  *
@@ -63,18 +74,15 @@ function refreshCardFlips() {
     setTimeout(function(){
         $(".flip-card-effect").flip(false);
     }, 850);
-    $('.btn-enter.turn-card-back-action-btn').hide();
-    $('.btn-enter.turn-card-action-btn').show();
 }
 
-function turnCardAndCheckUserInput() {
-    $(".owl-item.active .flip-card-effect").flip(true);
-    $('.btn-enter.turn-card-back-action-btn').show();
-    $('.btn-enter.turn-card-action-btn').hide();
-}
-
-function turnCardBack() {
-    $(".owl-item.active .flip-card-effect").flip(false);
-    $('.btn-enter.turn-card-back-action-btn').hide();
-    $('.btn-enter.turn-card-action-btn').show();
+function turnCard() {
+    var flip = $(".owl-item.active .flip-card-effect").data("flip-model");
+    if(flip.isFlipped){
+        $(".owl-item.active .flip-card-effect").flip(false);
+        $('.translation-input input').removeAttr('disabled');
+    }else{
+        $(".owl-item.active .flip-card-effect").flip(true);
+        $('.translation-input input').attr('disabled','disabled');
+    }
 }
