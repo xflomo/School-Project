@@ -34,7 +34,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <div class="navbar-spacer"></div>
+            <div class="nav-spacer"></div>
             {% if is_granted('ROLE_USER') %}
             <div class="loggedin-user">
                 <div class="icon-bubble">
@@ -43,35 +43,47 @@
             </div>
             {% endif %}
         </div>
+        {% if header_headline is defined %}
+            <div class="container">
+                <h1>{{ header_headline }}</h1>
+            </div>
+        {% endif %}
+        </div>
     </header>
+
     <body>
         {% block body %}{% endblock %}
+
+        <div class="side-nav">
+            <div class="side-nav-header">
+                 <span class="close-btn">
+                    <i class="material-icons">close</i>
+                </span>
+            </div>
+            <ul>
+                <li><a href="{{ path('homepage') }}" title="Startseite">Startseite</a></li>
+                <li><a href="{{ path('homepage') }}" title="Startseite">Profil</a></li>
+                <hr>
+                <li><a href="#" title="Kartenstapel">Kartenstapel</a></li>
+                <ul class="sub-menu">
+                    <li><a href="{{ path('karteikarte') }}" title="Kartenstapel 1">Kartenstapel 1</a></li>
+                    <li><a href="{{ path('karteikarte') }}" title="Beispiel Stapel">Beispiel Stapel</a></li>
+                    <li><a href="{{ path('karteikarte') }}" title="Stapel von Florian">Stapel von Florian</a></li>
+                    <li><a href="{{ path('karteikarte') }}" title="Stapel von Edurado">Stapel von Edurado</a></li>
+                </ul>
+                <hr>
+                <li><a href="{{ path('user_registration') }}" title="Registrieren">Registrieren</a></li>
+                <li><a href="{{ path('logout') }}" title="Abmelden">Abmelden</a></li>
+            </ul>
+        </div>
+        <div class="menu-overlay"></div>
+
         {% block javascripts %}
             <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
             <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
             <script src="{{ asset('bundles/WebAppBundle/Components/jquery-textfill/source/jquery.textfill.min.js') }}"></script>
             <script src="{{ asset('bundles/WebAppBundle/Components/OwlCarousel2/dist/owl.carousel.min.js') }}"></script>
             <script src="{{ asset('bundles/WebAppBundle/Js/Main.js') }}"></script>
-            <script src="{{ asset('bundles/WebAppBundle/Js/CardStackView.js') }}"></script>
         {% endblock %}
     </body>
-
-    <div class="side-nav">
-        <span class="close-btn">
-            <i class="material-icons">close</i>
-        </span>
-        <ul>
-            <li><a href="{{ path('homepage') }}" title="Startseite">Startseite</a></li>
-            <li><a href="#" title="Kartenstapel">Kartenstapel</a></li>
-            <ul class="sub-menu">
-                <li><a href="{{ path('karteikarte') }}" title="Kartenstapel 1">Kartenstapel 1</a></li>
-                <li><a href="{{ path('karteikarte') }}" title="Beispiel Stapel">Beispiel Stapel</a></li>
-                <li><a href="{{ path('karteikarte') }}" title="Stapel von Florian">Stapel von Florian</a></li>
-                <li><a href="{{ path('karteikarte') }}" title="Stapel von Edurado">Stapel von Edurado</a></li>
-            </ul>
-            <li><a href="{{ path('user_registration') }}" title="Registrieren">Registrieren</a></li>
-            <li><a href="{{ path('logout') }}" title="Abmelden">Abmelden</a></li>
-        </ul>
-    </div>
-    <div class="menu-overlay"></div>
 </html>

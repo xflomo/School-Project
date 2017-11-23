@@ -1,5 +1,11 @@
 {% extends 'layouts/base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/WebAppBundle/Css/CardDeckView.css') }}" rel="stylesheet">
+
+{% endblock %}
+
 {% block body %}
     <div id="karteikarte" class="karteikarte">
         <div class="aktueller-stapel-daten">
@@ -78,3 +84,7 @@
 
 {% endblock %}
 
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/WebAppBundle/Js/CardDeckView.js') }}"></script>
+{% endblock %}

@@ -28,7 +28,7 @@ class DefaultController extends Controller
     public function karteikarteAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('start/cardStackView.html.twig', [
+        return $this->render('start/CardDeckView.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }

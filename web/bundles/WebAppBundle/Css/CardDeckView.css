@@ -1,0 +1,166 @@
+/*************************
+*
+* Card Deck View Styles
+*
+**************************/
+
+
+.karteikarte{
+    margin: 0 auto;
+    width: 800px;
+    box-shadow: 0px -2px 15px #0000002b;
+    z-index: 3;
+    position: relative;
+    margin-top: -75px;
+}
+
+
+.karteikarte .karteikart-content{
+    height: 350px;
+    min-height: 350px;
+    max-height: 350px;
+    padding: 40px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Merienda One;
+    z-index: 3;
+    border: 1px solid #eee;
+    border-top: 0px;
+    border-left: 0px;
+}
+
+.karteikarte .karteikart-content.back{
+    background-color: #FFF176;
+}
+
+.karteikarte .next-card-bg{
+    background: #fff;
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    border: 1px solid #eee;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.karteikarte .next-card-bg.next-card-bg-2{
+    bottom: -8px;
+    right: -8px;
+    z-index: -2;
+    box-shadow: 0px -2px 15px #0000002b;
+}
+
+.owl-carousel .owl-stage-outer{
+    background-color: #f5f5f5;
+}
+
+.karteikarte .prev-card-arrow,
+.karteikarte .owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    left: -85px;
+    font-size: 100px;
+    color: #777;
+    top: 140px;
+    cursor: pointer;
+    z-index: 5;
+    line-height: 55px;
+    outline: none !important;
+}
+
+.karteikarte .next-card-arrow,
+.karteikarte .owl-carousel  .owl-nav button.owl-next{
+    position: absolute;
+    right: -90px;
+    font-size: 100px;
+    color: #777;
+    top: 140px;
+    cursor: pointer;
+    z-index: 5;
+    line-height: 55px;
+    outline: none !important;
+}
+
+.card-navigation{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 0px 70px;
+    display: flex;
+}
+
+.card-navigation i{
+    color: #777;
+    font-size: 35px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.card-navigation i:hover{
+    color: #333;
+}
+
+.card-navigation i:last-child{
+    margin-right: 0px;
+}
+
+.prev-card-arrow:hover,
+.karteikarte .owl-carousel .owl-nav button.owl-prev:hover,
+.karteikarte .owl-carousel  .owl-nav button.owl-next:hover,
+.next-card-arrow:hover{
+    color: #333;
+}
+
+.karteikarte .owl-dots{
+    display: none;
+}
+
+.translation-input{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 800px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.translation-input input{
+    background: none;
+    border: 0px;
+    border-bottom: 1px solid #bbb;
+    font-size: 20px;
+    font-family: Roboto-Light;
+    width: 100%;
+    padding: 13px;
+    outline: none !important;
+}
+
+
+.aktueller-stapel-daten{
+    color: #fff;
+    font-size: 20px;
+    font-family: Roboto-Light;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: -50px;
+    position: absolute;
+    padding: 0px 20px;
+}
+
+.aktueller-stapel-daten .stapel-name{
+    display: flex;
+    flex: 1;
+}
+.aktueller-stapel-daten .anzahl-karten i{
+    font-size: 27px;
+    margin-top: 2px;
+}
+
+.aktueller-stapel-daten i{
+    font-size: 30px;
+    float: left;
+    margin-right: 10px;
+}
