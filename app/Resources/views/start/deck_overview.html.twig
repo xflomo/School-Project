@@ -1,0 +1,75 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/WebAppBundle/Css/DeckOverview.css') }}" rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="deck-overview-container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 deck-col">
+                    <div class="deck-wrapper">
+                        <div class="deack-header">
+                            <h3>Deckname</h3>
+                            <div class="icon-row">
+                                <i class="material-icons">mode_edit</i>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Karten: 12</li>
+                            <li>Besitzer: Du</li>
+                            <li>Erstellt am: 12.12.2012</li>
+                        </ul>
+                        <div class="btn-row">
+                            <a class="btn-enter">Üben</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 deck-col">
+                    <div class="deck-wrapper">
+                        <div class="deack-header">
+                            <h3>Deckname</h3>
+                            <div class="icon-row">
+                                <i class="material-icons">mode_edit</i>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Karten: 12</li>
+                            <li>Besitzer: Du</li>
+                            <li>Erstellt am: 12.12.2012</li>
+                        </ul>
+                        <div class="btn-row">
+                            <a class="btn-enter">Üben</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 deck-col">
+                    <div class="deck-wrapper">
+                        <div class="deack-header">
+                            <h3>Deckname</h3>
+                            <div class="icon-row">
+                                <i class="material-icons">mode_edit</i>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Karten: 12</li>
+                            <li>Besitzer: Du</li>
+                            <li>Erstellt am: 12.12.2012</li>
+                        </ul>
+                        <div class="btn-row">
+                            <a class="btn-enter">Üben</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}

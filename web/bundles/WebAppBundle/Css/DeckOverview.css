@@ -1,0 +1,64 @@
+.deck-overview-container{
+    margin-top: 60px;
+}
+
+.deck-overview-container .deck-col{
+    margin-bottom: 30px;
+}
+
+.deck-overview-container .deck-wrapper{
+    box-shadow: 0px 0px 15px #0000002b;
+    background-color: #fff;
+    padding: 25px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    position: relative;
+    font-size: 17px;
+}
+
+.deck-wrapper .icon-row{
+    display: flex;
+}
+
+.deck-wrapper .icon-row i{
+    padding: 10px 8px;
+    color: #777;
+    cursor: pointer;
+}
+
+.deck-wrapper .icon-row i:hover{
+    color: #212121;
+}
+
+
+.deck-wrapper .btn-row{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.deck-wrapper .btn-row .btn-enter{
+    padding: 10px 35px;
+}
+
+
+.deck-wrapper .deack-header{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.deck-wrapper h3{
+    font-size: 30px;
+    margin-bottom: 0px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.deck-wrapper ul{
+    padding-left: 15px;
+}
+
+.deck-wrapper li{
+    list-style: none;
+}

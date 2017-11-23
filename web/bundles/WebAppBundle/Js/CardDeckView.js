@@ -40,7 +40,6 @@ $(document).keyup(function(e) {
     }
     // Pfeil Leertaste
     else if(e.keyCode == 32){
-        $( "body" ).click();
         var flip = $(".flip-card-effect").data("flip-model");
         if(flip.isFlipped){
             turnCard();
