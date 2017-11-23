@@ -57,7 +57,15 @@
     </body>
 
     <div class="side-nav">
-
+        <span class="close-btn">
+            <i class="material-icons">close</i>
+        </span>
+        <ul>
+            <li><a href="{{ path('homepage') }}" title="Startseite">Startseite</a></li>
+            <li><a href="{{ path('karteikarte') }}" title="Karteikarten">Karteikarten</a></li>
+            <li><a href="{{ path('user_registration') }}" title="Registrieren">Registrieren</a></li>
+            <li><a href="{{ path('logout') }}" title="Abmelden">Abmelden</a></li>
+        </ul>
     </div>
     <div class="menu-overlay"></div>
 </html>

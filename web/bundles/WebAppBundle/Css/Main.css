@@ -54,19 +54,53 @@ header .navbar-spacer{
 
 .side-nav{
     position: fixed;
-    left: -650px;
+    left: -500px;
     top: 0;
     bottom: 0;
-    width: 650px;
+    width: 500px;
     background: #fff;
     z-index: 1001;
     box-shadow: 0px 0px 40px #0000006e;
     display: none;
-    -webkit-transition: all 0.6s ease-in;
-    -moz-transition: all 0.6s ease-in;
-    -o-transition: all 0.6s ease-in;
-    transition: all 0.6s ease-in;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
 }
+
+.side-nav ul{
+    padding: 70px 0px;
+}
+
+.side-nav ul li{
+    list-style: none;
+}
+
+.side-nav ul li a{
+    padding: 20px 80px;
+    font-size: 25px;
+    font-family: Roboto-Light;
+    color: #333;
+    display: block;
+}
+
+.side-nav ul li a:hover{
+    text-decoration: none;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.side-nav .close-btn{
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.side-nav .close-btn i{
+    font-size: 34px;
+}
+
 
 .menu-overlay{
     position: fixed;
@@ -77,6 +111,7 @@ header .navbar-spacer{
     z-index: 1000;
     background: #0003;
     display: none;
+    cursor: pointer;
 }
 
 .menu-burger{

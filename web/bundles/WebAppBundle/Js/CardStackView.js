@@ -23,16 +23,18 @@ $(window).load(function () {
         minFontPixels: 22,
     });
 
+    
+    $('.turn-card-action-btn').on('click', function () {
+        turnCardAndCheckUserInput();
+    });
+
+    $('.turn-card-back-action-btn').on('click', function () {
+        turnCardBack();
+    });
+
 
 });
 
-$('.turn-card-action-btn').on('click', function () {
-    turnCardAndCheckUserInput();
-});
-
-$('.turn-card-back-action-btn').on('click', function () {
-    turnCardBack();
-});
 
 
 
