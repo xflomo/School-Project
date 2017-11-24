@@ -14,7 +14,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * @ORM\Table(name="app_users")
+ * @ORM\Table(name="users")
  * @UniqueEntity(fields="email", message="Email already taken")
  * @UniqueEntity(fields="username", message="Username already taken")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\UserRepository")
@@ -23,9 +23,11 @@ class User implements UserInterface, \Serializable
 {
 
     /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="bigint")
      * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 

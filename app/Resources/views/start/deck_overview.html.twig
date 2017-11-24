@@ -8,6 +8,14 @@
 
 {% block body %}
     <div class="container">
+
+        {% for message in app.flashes('addResultMessage') %}
+            <div class="flash-notice">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        <div class="add-deck-btn" data-toggle="modal" data-target="#addDeckModal">+</div>
         <div class="deck-overview-container">
             <div class="row">
                 <div class="col-sm-6 col-md-4 deck-col">
@@ -68,8 +76,78 @@
         </div>
     </div>
 
+
+    <!-- add Deck Modal -->
+    <div id="addDeckModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <form action="{{ path('add_deck', { 'username': app.user.username }) }}" method="post" role="form">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Kartendeck anlegen</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="">Kartendeck Name</label>
+                                    <input type="text" class="form-control" minlength="3" maxlength="15" required name="deckname" placeholder="der Kartendeck Name (max. 15 Zeichen)">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="">Code zum Teilen</label>
+                                    <input type="text" readonly="readonly" minlength="10" maxlength="10" required class="form-control" name="deck-share-code" value="d2ssa4d24s">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h4 class="modal-title">Karten anlegen</h4>
+                        <br>
+                        <div class="add-card-wrapper">
+                            <div class="row">
+                                <fieldset>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="">Text auf der Vorderderseite</label>
+                                            <textarea type="text" class="form-control" minlength="2" maxlength="200" name="card[1][card-frontsite]" rows="2" cols="2" placeholder="Vokabel oder ähnliches (max. 200 Zeichen)"></textarea>
+                                            <p class="error">Dieses Feld muss ausgefüllt werden, damit du eine neue Karte anlegen kannst.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="">Text auf der Rückseite</label>
+                                            <textarea type="text" class="form-control" name="card[1][card-backsite]" minlength="2" maxlength="200" rows="2" cols="2" placeholder="Beschreibungstext  (max. 200 Zeichen)"></textarea>
+                                            <p class="error">Dieses Feld muss ausgefüllt werden, damit du eine neue Karte anlegen kannst.</p>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="add-card-btn">
+                                    <span>+</span> Karte hinzufügen
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-enter btn-close" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn-enter">Anlegen</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
+    <script src="{{ asset('bundles/WebAppBundle/Js/CardDeckOverview.js') }}"></script>
 {% endblock %}

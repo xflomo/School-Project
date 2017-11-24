@@ -4,7 +4,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Form\UserType;
-use AppBundle\Entity\User;
+use AppBundle\Entity\AppUsers;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,7 +18,7 @@ class RegistrationController extends Controller
     public function registerAction(Request $request, UserPasswordEncoderInterface $passwordEncoder)
     {
         // 1) build the form
-        $user = new User();
+        $user = new AppUsers();
         $form = $this->createForm(UserType::class, $user);
 
         // 2) handle the submit (will only happen on POST)
@@ -37,7 +37,7 @@ class RegistrationController extends Controller
             // ... do any other work - like sending them an email, etc
             // maybe set a "flash" success message for the user
 
-            return $this->redirectToRoute('karteikarte');
+            return $this->redirectToRoute('homepage');
         }
 
         return $this->render(
