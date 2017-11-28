@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="de" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="general.welcome" resname="general.welcome">
+                <source>Willkommen</source>
+                <target>Willkommen</target>
+            </trans-unit>
+
+            <trans-unit id="home.introduction" resname="home.introduction">
+                <source>Einleitung</source>
+                <target>Einleitung</target>
+            </trans-unit>
+            <trans-unit id="home.register_now" resname="home.register_now">
+                <source>Jetzt Anmelden</source>
+                <target>Jetzt Anmelden</target>
+            </trans-unit>
+
+
+            <trans-unit id="nav.home" resname="nav.home">
+                <source>Startseite</source>
+                <target>Startseite</target>
+            </trans-unit>
+            <trans-unit id="nav.profile" resname="nav.profile">
+                <source>Profil</source>
+                <target>Profil</target>
+            </trans-unit>
+            <trans-unit id="nav.register" resname="nav.register">
+                <source>Registrieren</source>
+                <target>Registrieren</target>
+            </trans-unit>
+            <trans-unit id="nav.sign_off" resname="nav.sign_off">
+                <source>Abmelden</source>
+                <target>Abmelden</target>
+            </trans-unit>
+
+
+
+            <trans-unit id="stack.study" resname="stack.study">
+                <source>Üben</source>
+                <target>Üben</target>
+            </trans-unit>
+            <trans-unit id="stack.cardstack" resname="stack.cardstack">
+                <source>Kartenstapel</source>
+                <target>Kartenstapel</target>
+            </trans-unit>
+
+            <trans-unit id="login.login" resname="login.login">
+                <source>Anmeldung</source>
+                <target>Anmeldung</target>
+            </trans-unit>
+            <trans-unit id="login.username" resname="login.username">
+                <source>Benutzername</source>
+                <target>Benutzername</target>
+            </trans-unit>
+            <trans-unit id="login.password" resname="login.password">
+                <source>Passwort</source>
+                <target>Passwort</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
