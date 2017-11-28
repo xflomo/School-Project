@@ -3,3 +3,8 @@ app:
     type: annotation
 logout:
     path: /logout
+login:
+    path:     /{_locale}/login
+    defaults: { _controller: AppBundle:Security:login }
+    requirements:
+        _locale: '%app.locales%'

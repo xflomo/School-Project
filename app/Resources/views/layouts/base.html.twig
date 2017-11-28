@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="mobile-web-app-capable" content="yes">
 
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}{%  trans  %}willkommen{% endtrans %}{% endblock %}</title>
         {% block stylesheets %}
             <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
             <!-- Google Material Icons -->
@@ -61,23 +61,23 @@
                 </span>
             </div>
             <ul>
-                <li><a href="{{ path('homepage') }}" title="Startseite">Startseite</a></li>
-                <li><a href="{{ path('homepage') }}" title="Startseite">Profil</a></li>
+                <li><a href="{{ path('homepage') }}" title="Startseite">{% trans %}nav.home{% endtrans %}</a></li>
+                <li><a href="{{ path('homepage') }}" title="Startseite">{% trans %}nav.profile{% endtrans %}</a></li>
 
                 {% if is_granted('ROLE_USER') %}
                     <hr>
-                    <li><a href="{{ path('deck_overview', { 'username': app.user.username }) }}" title="Kartenstapel">Kartenstapel</a></li>
+                    <li><a href="{{ path('deck_overview', { 'username': app.user.username }) }}" title="{% trans %}stack.cardstack{% endtrans %}">{% trans %}stack.cardstack{% endtrans %}</a></li>
                     <ul class="sub-menu">
-                        <li><a href="{{ path('flashcard_trainView', { 'username': app.user.username, 'deckname': app.user.username }) }}" title="Kartenstapel 1">Kartenstapel 1</a></li>
-                        <li><a href="{{ path('flashcard_trainView', { 'username': app.user.username, 'deckname': app.user.username }) }}" title="Beispiel Stapel">Beispiel Stapel</a></li>
-                        <li><a href="{{ path('flashcard_trainView', { 'username': app.user.username, 'deckname': app.user.username }) }}" title="Stapel von Florian">Stapel von Florian</a></li>
-                        <li><a href="{{ path('flashcard_trainView', { 'username': app.user.username, 'deckname': app.user.username }) }}" title="Stapel von Edurado">Stapel von Edurado</a></li>
+                        <li><a href="{{ path('flashcard_trainView', { 'username': app.user.username, 'deckname': app.user.username }) }}" title="Kartenstapel 1">{% trans %}Kartenstapel 1{% endtrans %}</a></li>
+                        <li><a href="{{ path('flashcard_trainView', { 'username': app.user.username, 'deckname': app.user.username }) }}" title="Beispiel Stapel">{% trans %}Beispiel Stapel{% endtrans %}</a></li>
+                        <li><a href="{{ path('flashcard_trainView', { 'username': app.user.username, 'deckname': app.user.username }) }}" title="Stapel von Florian">{% trans %}Stapel von Florian{% endtrans %}</a></li>
+                        <li><a href="{{ path('flashcard_trainView', { 'username': app.user.username, 'deckname': app.user.username }) }}" title="Stapel von Edurado">{% trans %}Stapel von Edurado{% endtrans %}</a></li>
                     </ul>
                 {% endif %}
 
                 <hr>
-                <li><a href="{{ path('user_registration') }}" title="Registrieren">Registrieren</a></li>
-                <li><a href="{{ path('logout') }}" title="Abmelden">Abmelden</a></li>
+                <li><a href="{{ path('user_registration') }}" title="Registrieren">{% trans %}nav.register{% endtrans %}</a></li>
+                <li><a href="{{ path('logout') }}" title="Abmelden">{% trans %}nav.sign_off{% endtrans %}</a></li>
             </ul>
         </div>
         <div class="menu-overlay"></div>
