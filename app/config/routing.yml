@@ -8,3 +8,7 @@ login:
     defaults: { _controller: AppBundle:Security:login }
     requirements:
         _locale: '%app.locales%'
+
+app_api_v1:
+    resource: '@AppBundle/Controller/Api/'
+    type: annotation
