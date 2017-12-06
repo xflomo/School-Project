@@ -24,20 +24,21 @@ class UserController extends Controller
 {
 
     /**
-     * @Route("/api/user")
-     * @Method("POST")
+     * @Route("/api/user/post", name="user_register")
      */
     public function registerAction(Request $request)
     {
-        $passwordEncoder = new PasswordEncoder();
+//        $passwordEncoder = new PasswordEncoder();
 
-        $head = $request->getContentType();
+        $head = $request->getMethod();
 
         //TODO differentiate between http and json request
 
-        $body = $request->getContent();
-        $data = json_decode($body);
-
+//        $body = $request->getContent();
+//        $data = json_decode($body);
+        var_dump($head);
+        var_dump($request->get("email"));
+        exit();
         // 1) build the form
         $user = new User();
         $form = $this->createForm(UserType::class, $user);
@@ -47,7 +48,7 @@ class UserController extends Controller
         if ($form->isSubmitted() && $form->isValid()) {
 
             // 3) Encode the password (you could also do this via Doctrine listener)
-            $password = $passwordEncoder->encodePassword($user, $user->getPlainPassword());
+//            $password = $passwordEncoder->encodePassword($user, $user->getPlainPassword());
             $user->setPassword($password);
 
             // 4) save the User!
@@ -61,14 +62,14 @@ class UserController extends Controller
             $response =  new Response("Registierung erfolgreich, bitte E-Mail Adresse bestätigen", 201);
         }
 
-        return $response;
+        $encoded_response =  json_encode($response);
 
-        return new Response("Hier text einfügen, Registrierung war fehlerhaft.",400);
+        return new Response($encoded_response,400);
     }
 
     /**
-     * @Route("/api/user")
-     * @Method("GET")
+     * @Route("/api/user/get", name="user_login")
+     * @Method({"Get"})
      */
     public function loginAction(Request $request)
     {

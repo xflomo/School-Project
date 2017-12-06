@@ -16,7 +16,6 @@ use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * @ORM\Table(name="user")
  * @UniqueEntity(fields="email", message="Email already taken")
- * @UniqueEntity(fields="username", message="Username already taken")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\UserRepository")
  */
 class User implements UserInterface, \Serializable
@@ -30,12 +29,6 @@ class User implements UserInterface, \Serializable
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
-
-    /**
-     * @ORM\Column(type="string", length=255, unique=true)
-     * @Assert\NotBlank()
-    */
-    private $username;
 
     /**
      * @Assert\NotBlank()
@@ -77,7 +70,6 @@ class User implements UserInterface, \Serializable
     {
         return serialize(array(
             $this->id,
-            $this->username,
             $this->password,
             // see section on salt below
             // $this->salt,
@@ -97,7 +89,6 @@ class User implements UserInterface, \Serializable
     {
         list (
             $this->id,
-            $this->username,
             $this->password,
             // see section on salt below
             // $this->salt
@@ -166,15 +157,7 @@ class User implements UserInterface, \Serializable
      */
     public function getUsername()
     {
-        return $this->username;
-    }
-
-    /**
-     * @param mixed $username
-     */
-    public function setUsername($username)
-    {
-        $this->username = $username;
+        return $this->email;
     }
 
     /**
